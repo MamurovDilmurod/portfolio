@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ozim from "../assets/ozimmmmmmm.jpg"; // Your image import
+import ozim from "../assets/me.jpg"; // Your image import
 import { TypeAnimation } from "react-type-animation";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -14,13 +14,13 @@ function HeroSection() {
   }, []); // Ensures useEffect runs only once
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 sm:gap-4 px-4 sm:px-8 py-12">
+    <div className="grid grid-cols-1 gap-6 px-4 py-12 sm:grid-cols-12 sm:gap-4 sm:px-8">
       {/* Left Section */}
       <div
-        className="col-span-1 sm:col-span-7 place-self-center text-center sm:text-left"
+        className="col-span-1 text-center sm:col-span-7 place-self-center sm:text-left"
         data-aos="fade-right" // Animation for left section
       >
-        <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-6xl font-extrabold">
+        <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl lg:text-6xl">
           <span className="text-transparent bg-clip-text bg-gradient-to-l from-blue-500 via-purple-600 to-pink-500">
             Hello I'm
           </span>
@@ -34,7 +34,7 @@ function HeroSection() {
           />
         </h1>
         <p
-          className="text-gray-400 text-base sm:text-lg lg:text-xl mb-4"
+          className="mb-4 text-base text-gray-400 sm:text-lg lg:text-xl"
           data-aos="fade-up" // Animation for paragraph
         >
           It's been a year since I got into programming. <br /> My goal is to
@@ -47,7 +47,7 @@ function HeroSection() {
             rel="noopener noreferrer"
           >
             <button
-              className="w-full sm:w-auto text-white bg-gradient-to-l from-blue-500 via-purple-600 to-pink-500 font-bold rounded-full py-3 px-6 mr-4 transition duration-300 hover:from-blue-400 hover:via-purple-500 hover:to-pink-400"
+              className="w-full px-6 py-3 mr-4 font-bold text-white transition duration-300 rounded-full sm:w-auto bg-gradient-to-l from-blue-500 via-purple-600 to-pink-500 hover:from-blue-400 hover:via-purple-500 hover:to-pink-400"
               data-aos="zoom-in" // Button animation
             >
               GitHub
@@ -56,7 +56,7 @@ function HeroSection() {
 
           {/* Uncomment if you want to add a "Download CV" button */}
           {/* <button
-            className="w-full sm:w-auto font-bold border-white border text-white rounded-full py-3 px-6 hover:text-slate-50 mt-4 sm:mt-0"
+            className="w-full px-6 py-3 mt-4 font-bold text-white border border-white rounded-full sm:w-auto hover:text-slate-50 sm:mt-0"
             data-aos="zoom-in"
           >
             Download CV
@@ -69,13 +69,14 @@ function HeroSection() {
         className="col-span-1 sm:col-span-5 place-self-center"
         data-aos="fade-left" // Animation for right section (image)
       >
-        <div className="mt-4 overflow-hidden bg-transparent">
+        <div className="mt-4 overflow-hidden bg-transparent border border-gray-300 rounded-lg shadow-lg">
           <img
             src={ozim}
             alt="logo"
-            className="w-full h-auto object-cover focus:scale-105 hover:scale-110 transition-all duration-300"
+            className="object-cover w-full h-auto transition-transform duration-300 rounded-lg focus:scale-105 hover:scale-110"
           />
         </div>
+
       </div>
     </div>
   );
