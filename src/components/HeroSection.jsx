@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ozim from "../assets/me.jpg"; // Your image import
+import ozim from "../assets/meeeeeee.jpg"; // Your image import
 import { TypeAnimation } from "react-type-animation";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -42,7 +42,7 @@ function HeroSection() {
         </p>
         <div>
           <a
-            href="https://github.com/FrontendDeveloperDilmurod"
+            href="https://github.com/MamurovDilmurod"
             target="_blank"
             rel="noopener noreferrer"
           >
